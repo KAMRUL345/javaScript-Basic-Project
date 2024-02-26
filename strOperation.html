@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Program for find out domain from email address</h1>
+
+    <!-- <script>
+        let email = "kamrul.phy@gmail.com";
+        let atIndex = email.indexOf("@");
+
+        console.log(atIndex);
+        console.log(email.substring(atIndex+1));
+    </script> -->
+
+<!-- Using Function -->
+
+    <script>
+        let email = "kamrul@wordpress.com";
+        function extractDomain(email) {
+            let atIndex = email.indexOf("@");
+            return email.substring(atIndex+1);
+        }
+        document.write(extractDomain("kamrul@wordpress.net"));
+    </script>
+    
+</body>
+</html>

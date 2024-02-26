@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+<script>
+
+    //example
+     function nameUser() {
+    // console.log("my name is kamrul hasan");
+     document.write("my name is kamrul hasan");
+    }
+
+    nameUser();
+
+    document.write("<br>");
+    //example
+
+
+ function toCelsius(fahrenheit) {
+     result = (5/9)* (fahrenheit-32);
+     console.log(result);
+
+ }
+
+ toCelsius(707);
+ document.write("<br>");
+ toCelsius(100);
+
+ 
+
+ document.write("<br>");
+ //example
+
+ function addition(a, b) {
+     console.log(a+b);
+ }
+ addition(2,30);
+
+ document.write("<br>");
+
+ function name(name1, name2) {
+     let fullName = name1 + name2;
+     return fullName;
+ }
+ let x = name("Kamrul ", "hasan")
+ console.log(x);
+
+ document.write("<br>");
+
+ function jog(a,b) {
+     let jogresult = a+b;
+     return jogresult;
+ }
+
+ let y = jog(10, 33);
+ console.log("jogful is", y);
+
+ document.write("<br>");
+
+ function toCelsius(fahrenheit) {
+     return (5/9) * (fahrenheit-32);
+ }
+
+ let value = toCelsius(77);
+ console.log(value);
+
+ document.write("<br>");
+
+ function toCelsius(fahrenheit) {
+     result = (5/9) * (fahrenheit-32);
+     document.write(result);
+ }
+
+ toCelsius(50);
+ document.write("<br>");
+ toCelsius(77);
+
+document.write("<br>");
+
+ function forLoop(countStart, countEnd){
+     for(let count = countStart; count<=countEnd; count++) {
+         document.write("result: ", count + "<br>");
+        
+     }
+ }
+forLoop(1, 10);
+  document.write("<br>");
+forLoop(40, 50);
+
+
+ document.write("<br>");
+
+document.write(typeof Infinity);
+
+
+</script>
+    
+</body>
+</html>

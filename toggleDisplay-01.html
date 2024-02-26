@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Toggle Display by Using Function</h1>
+
+    <button onclick="myFunction()">Click to Toggle</button>
+    <!-- Div on which toggle property use . Hide and Show result -->
+    <div id="myDIV">
+        <h2>Kamrul Hasan</h2>
+        <img src="/Full Project/myproject01/img/img1.jpg" alt="">
+    </div>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if(x.style.display === "none"){
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>

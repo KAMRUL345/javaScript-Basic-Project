@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+    let fruits = ["apple", "mango", "lichi", "banana"];
+    console.log(fruits);
+    console.log(fruits[0]);
+    console.log(fruits[3]);
+    console.log(fruits[4]);
+
+    //Adding new element of an array
+
+    fruits[4] = "Jackfruit";
+    console.log(fruits);
+
+    //replacing an array element
+
+    fruits[0] = "Orange";
+    console.log(fruits);
+
+    //printing all element of an array
+    for(let i = 0; i<fruits.length; i++){
+        console.log(fruits[i]);
+    }
+
+    //converting an array to string
+
+    console.log(fruits.toString());
+
+    let cars = new Array("Saab", "Volvo", "BMW"); //let cars = ["Saab", "Volvo", "BMW"]
+    console.log(cars);
+
+    //Arrays are Objects
+    console.log(typeof cars);
+
+</script>
+    
+</body>
+</html>
