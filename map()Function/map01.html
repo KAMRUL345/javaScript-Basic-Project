@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+
+
+
+<script>
+const numbers = [4, 9, 16, 25];
+let root = numbers.map(Math.sqrt);
+document.write(root);   // Output: 2,3,4,5
+document.write("<br>"); // New line for better readability
+
+// Another example:
+const numbers2 = [1, 4, 9, 16, 25];
+let roots2 = numbers2.map((num)=>{
+    return num*5;
+
+});
+document.write(roots2); // Output: 5,20,45,80,125
+
+document.write("<br>"); // New line for better readability
+
+// Another example:
+
+const numbers3 = [1, 4, 9, 16, 25];
+const newArr = numbers3.map(myFunction);
+function myFunction(num) {
+    return num * 10;
+}
+document.write(newArr); // Output: 10,40,90,160,250
+
+// More examples:
+document.write("<br>"); // New line for better readability
+
+const number = [1, 4, 9];
+const roots = number.map((num) => Math.sqrt(num));
+document.write(roots); // Output: 1,2,3
+
+// Using parseInt() with map()
+
+["1", "2", "3"].map(parseInt);
+// Output: [1, NaN, NaN]
+// Explanation: The second and third elements are NaN because parseInt() takes two arguments: the string to parse and the radix (base) to use. The second argument is the index of the element in the array, which is not a valid radix.        
+
+
+["1", "2", "3"].map(Number); // [1, 2, 3]
+
+
+// Syntax
+// array.map(function(currentValue, index, arr), thisValue)
+// currentValue: Required. The value of the current element 
+
+
+// The map() method creates a new array with the results of calling a function for every array element
+// The function is called for each element in the array, and the result is stored in a new array
+// The map() method does not execute the function for empty elements
+// The map() method returns a new array, and does not change the original array
+// The map() method can be used to perform operations on each element of the array, such as squaring or taking the square root
+// The map() method can also be used to convert the elements of the array to a different type, such as strings or numbers
+// The map() method can be used to filter the elements of the array, such as removing duplicates or filtering out null values
+// The map() method can be used to transform the elements of the array, such as converting to uppercase or lowercase
+// The map() method can be used to chain multiple operations together, such as filtering and transforming the elements of the array
+// The map() method can be used to create a new array from an existing array, such as creating a copy of the array or creating a new array with modified elements
+
+
+</script>
+
+</body>
+</html>
